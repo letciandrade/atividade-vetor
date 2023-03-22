@@ -1,38 +1,44 @@
 
  var objetos = Array('cadeira','impressora','Garfo')
  const btnAdd = document.getElementById('adicionar')
- const novoObjeto = document.getElementById("input-obj").value.trim();
+ 
+ 
 
  btnAdd.addEventListener('click', () => {
+  let obj = document.getElementById('input-obj')
+  let valor = obj.value
 
-  if (novoObjeto === "") {
+
+  if ( valor === '') {
     alert("Informe um valor válido");
-    return;
+    
   }
  
   
-  if (objetos.includes(novoObjeto)) {
-    alert("Objeto já foi adicionado");
-    return;
+  else if (objetos.indexOf(valor) === -1) {
+    objetos.unshift(valor)
+    console.log(objetos)
   }
- 
-  
-  objetos.push(novoObjeto);
-  console.log(objetos); 
-  document.getElementById("input-obj").value = "";
 
+  else if(objetos.indexOf(valor) !== -1){
+    alert("Objeto já existe");
+    
+  }
+  
+document.getElementById('input-obj').value = ''
+
+  const btnOrder = document.getElementById('Ordernar')
+
+
+  btnOrder.addEventListener('click', () => {
+      
+      
+      console.log(objetos.sort()); 
+  
+  
+  })
   
 })
 
-const btnOrder = document.getElementById('Ordernar')
 
 
-btnOrder.addEventListener('click', () => {
-    var objetos = Array('cadeira','impressora','Garfo')
-    objetos.sort();
-    console.log(objetos); 
-
-
-}
-
-)

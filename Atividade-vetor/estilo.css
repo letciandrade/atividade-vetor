@@ -18,31 +18,35 @@ background-color: #393053;
 height: 8.5rem;
 width:19rem;
 border-radius: 5px;
-display: flex;
-align-items: center;
-
-
 
 }
+
+
 
 input{
     border:none;
     height: 30px;
+    padding: 1rem ;
+    margin: 1rem;
    
-    
 }
 
-button{
+.botao-add,.botao-ordernar{
+    display: flex ;
+    align-items: center;
     border: none;
     background-color: #635985;
     color: #fff;
     border-radius:4px;
+    padding: 0.6rem ;
+    margin: 0.6rem;
 }
 
 
 main{
 display: flex;
-flex-direction: center;
-gap: 10rem;
+align-items: center;
+justify-content: center;
+text-align: center;
 }
 
