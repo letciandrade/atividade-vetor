@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:#635985;
+    font-family: 'Open Sans';
+}
+h1{
+    font-size:5rem;
+    text-align:center;
+    color: #fff;
+}
+.form{
+background-color: #393053;
+height: 8.5rem;
+width:19rem;
+border-radius: 5px;
+display: flex;
+align-items: center;
+
+
+
+}
+
+input{
+    border:none;
+    height: 30px;
+   
+    
+}
+
+button{
+    border: none;
+    background-color: #635985;
+    color: #fff;
+    border-radius:4px;
+}
+
+
+main{
+display: flex;
+flex-direction: center;
+gap: 10rem;
+}
+
